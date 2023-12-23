@@ -1,0 +1,85 @@
+/** {
+    outline: solid 1px red
+}*/
+
+@font-face {
+    font-family: headerFont;
+    src: url(Iceberg-Regular.ttf);
+}
+
+@font-face {
+    font-family: textFont;
+    src: url(Exo-VariableFont_wght.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+
+    background: #1D3557;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 48px;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: headerFont;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#visualizer {
+    width: 1000px;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 48px;
+
+    background: #FFF;
+    stroke-width: 8px;
+    stroke: #A8DADC;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+.staple {
+    width: 3px;
+    height: 100px;
+
+    align-self: flex-end;
+
+    background-color: #457B9D;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 250px;
+    height: 100px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    color: #FFF;
+    font-family: textFont;
+    font-size: 28px;
+
+    background: #E63946;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #EF8089;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
